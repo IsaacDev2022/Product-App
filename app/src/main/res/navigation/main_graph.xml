@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.productapp.view.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_detailedProductFragment"
+            app:destination="@id/detailedProductFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment" />
+    </fragment>
+      <fragment
+        android:id="@+id/detailedProductFragment"
+        android:name="com.productapp.view.DetailedProductFragment"
+        android:label=""
+        tools:layout="@layout/fragment_detailed_product">
+
+        <argument
+            android:name="product"
+            app:argType="com.productapp.service.Model.Products"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_detailedProductFragment_to_cartFragment"
+            app:destination="@id/cartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment4"
+        android:name="com.productapp.view.ProfileFragment"
+        android:label="" />
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.productapp.view.flowPaymentFragments.CartFragment"
+        tools:layout="@layout/fragment_cart" >
+
+        <argument
+            android:name="product"
+            app:argType="com.productapp.service.Model.Products"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_cartFragment_to_personalDataFragment"
+            app:destination="@id/personalDataFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/personalDataFragment"
+        android:name="com.productapp.view.flowPaymentFragments.PersonalDataFragment"
+        android:label=""
+        tools:layout="@layout/fragment_personal_data" >
+        <action
+            android:id="@+id/action_personalDataFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.productapp.view.flowPaymentFragments.PaymentFragment"
+        android:label=""
+        tools:layout="@layout/fragment_payment" >
+        <action
+            android:id="@+id/action_paymentFragment_to_confirmedPaymentFragment2"
+            app:destination="@id/confirmedPaymentFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmedPaymentFragment2"
+        android:name="com.productapp.view.flowPaymentFragments.ConfirmedPaymentFragment"
+        android:label=""
+        tools:layout="@layout/fragment_confirmed_payment" >
+        <action
+            android:id="@+id/action_confirmedPaymentFragment2_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.productapp.view.category.CategoryFragment"
+        android:label=""
+        tools:layout="@layout/fragment_category" >
+        <action
+            android:id="@+id/action_categoryFragment_to_detailedProductFragment"
+            app:destination="@id/detailedProductFragment" />
+    </fragment>
+</navigation>

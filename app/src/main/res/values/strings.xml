@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">ProductApp</string>
+
+    <!-- Login -->
+    <string name="tv_login">Login</string>
+    <string name="edt_username">Username</string>
+    <string name="edt_password">Password</string>
+    <string name="btnLogin_text">Entrar</string>
+    <string name="tv_registerUser">Não possui cadastro? </string>
+    <string name="tv_registerNow">Cadastrar agora</string>
+
+    <!-- Register User -->
+    <string name="edt_firstName">Nome</string>
+    <string name="edt_lastName">Sobrenome</string>
+    <string name="edt_email">E-mail</string>
+    <string name="edt_phone">Número</string>
+    <string name="btnRegister_test">Cadastrar</string>
+
+    <!-- Product Item -->
+    <string name="tv_title">Titulo</string>
+    <string name="tv_price">R$00.00</string>
+    <string name="tv_rating">Rating</string>
+    <string name="tv_category">Categoria</string>
+    <string name="btn_detailedProduct">Detalhar</string>
+
+    <!-- Activity Main Drawer -->
+    <string name="mainProfile">Meu Perfil</string>
+    <string name="products">Produtos</string>
+    <string name="categories">Categorias</string>
+    <string name="logout">Sair</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

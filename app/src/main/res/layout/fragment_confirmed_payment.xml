@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".view.flowPaymentFragments.ConfirmedPaymentFragment">
+
+    <ImageView
+        android:layout_width="458dp"
+        android:layout_height="113dp"
+        android:src="@drawable/ic_checked" />
+
+    <TextView
+        android:layout_width="174dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Parabéns"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:gravity="center"
+        android:text="Compra efetuada com sucesso, clique no botão abaixo para continuar comprando!"
+        android:textSize="22sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_continue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continuar "
+        android:textSize="18sp"
+        android:layout_marginTop="42dp"
+        android:padding="22dp"
+        android:background="@drawable/btn_shape"
+        android:textColor="@color/white" />
+
+</LinearLayout>
